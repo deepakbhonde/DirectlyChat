@@ -6,7 +6,13 @@
 <title>Send WhatsApp Message Without Saving Number | DirectlyChat</title>
 <meta name="description" content="Send WhatsApp messages without saving phone numbers. Open direct chats with WhatsApp or WhatsApp Business, use international country codes, and start conversations instantly without adding contacts to your phone.">
 <link rel="canonical" href="https://directlychat.com/">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I send WhatsApp messages without saving a number?","acceptedAnswer":{"@type":"Answer","text":"Yes, enter the number and open WhatsApp instantly."}},{"@type":"Question","name":"Is DirectlyChat free?","acceptedAnswer":{"@type":"Answer","text":"Yes, DirectlyChat is free to use."}},{"@type":"Question","name":"Do you store phone numbers?","acceptedAnswer":{"@type":"Answer","text":"No. Phone numbers are processed locally."}},{"@type":"Question","name":"Does it work with WhatsApp Business?","acceptedAnswer":{"@type":"Answer","text":"Yes."}},{"@type":"Question","name":"Can I send international messages?","acceptedAnswer":{"@type":"Answer","text":"Yes, select the appropriate country code."}}]},{"@type":"WebSite","name":"DirectlyChat","url":"https://directlychat.com"},{"@type":"SoftwareApplication","name":"DirectlyChat","applicationCategory":"CommunicationApplication","operatingSystem":"Android, Web"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I send WhatsApp messages without saving a number?","acceptedAnswer":{"@type":"Answer","text":"Yes, enter the number and open WhatsApp instantly."}},{"@type":"Question","name":"Is DirectlyChat free?","acceptedAnswer":{"@type":"Answer","text":"Yes, DirectlyChat is free to use."}},{"@type":"Question","name":"Do you store phone numbers?","acceptedAnswer":{"@type":"Answer","text":"No. Phone numbers are processed locally."}},{"@type":"Question","name":"Does it work with WhatsApp Business?","acceptedAnswer":{"@type":"Answer","text":"Yes."}},{"@type":"Question","name":"Can I send international messages?","acceptedAnswer":{"@type":"Answer","text":"Yes, select the appropriate country code."}}]},{"@type":"WebSite","name":"DirectlyChat","url":"https://directlychat.com"},{"@type":"SoftwareApplication","name":"DirectlyChat","applicationCategory":"CommunicationApplication","operatingSystem":"Android, Web"}]}
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js');
+});
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -522,10 +528,16 @@ main,.main-content,.content-wrapper,#page-home,.page.active{
 
 
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
 <meta name="theme-color" content="#128C7E">
-<meta property="og:image" content="https://directlychat.com/android-icon-512x512.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="DirectlyChat">
+<meta property="og:image" content="https://directlychat.com/icon-512.png">
 </head>
 
 <body>
@@ -627,7 +639,8 @@ Send WhatsApp Message Without Saving Number
 <option value="852">🇭🇰 Hong Kong +852</option>
 <option value="36">🇭🇺 Hungary +36</option>
 <option value="354">🇮🇸 Iceland +354</option>
-<option value="91" selected>🇮🇳 India +91</option>
+<option value="" selected>🌍 Select Country Code</option>
+<option value="91">🇮🇳 India +91</option>
 <option value="62">🇮🇩 Indonesia +62</option>
 <option value="353">🇮🇪 Ireland +353</option>
 <option value="44">🇮🇲 Isle of Man +44</option>
