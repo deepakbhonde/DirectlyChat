@@ -639,7 +639,7 @@ Send WhatsApp Message Without Saving Number
 <option value="852">🇭🇰 Hong Kong +852</option>
 <option value="36">🇭🇺 Hungary +36</option>
 <option value="354">🇮🇸 Iceland +354</option>
-<option value="" selected>🌍 Select Country Code</option>
+<option value="" disabled selected>🌍 Select Country Code</option>
 <option value="91">🇮🇳 India +91</option>
 <option value="62">🇮🇩 Indonesia +62</option>
 <option value="353">🇮🇪 Ireland +353</option>
@@ -1037,6 +1037,20 @@ function shareApp() {
 }
 
 function rateApp() { window.open('https://play.google.com/store', '_blank'); }
+
+// Remember selected country
+const countrySelect = document.getElementById('countryCode');
+
+countrySelect.addEventListener('change', function () {
+  localStorage.setItem('selectedCountryCode', this.value);
+});
+
+window.addEventListener('load', function () {
+  const savedCountry = localStorage.getItem('selectedCountryCode');
+  if (savedCountry) {
+    countrySelect.value = savedCountry;
+  }
+});
 
 // Enter key on number field
 document.getElementById('phoneNumber').addEventListener('keydown', e => {
