@@ -1,0 +1,40 @@
+{
+  "name": "DirectlyChat",
+  "short_name": "DirectlyChat",
+  "description": "Send WhatsApp messages without saving phone numbers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#25D366",
+  "theme_color": "#25D366",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
