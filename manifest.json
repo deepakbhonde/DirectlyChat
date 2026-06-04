@@ -1,7 +1,6 @@
 {
   "name": "DirectlyChat",
   "short_name": "DirectlyChat",
-  "version": "2",
   "description": "Send WhatsApp messages without saving phone numbers.",
   "start_url": "/",
   "display": "standalone",
