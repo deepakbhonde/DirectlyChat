@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Page 1: Home (Main Tool) -->
+  
   <url>
     <loc>https://directlychat.com/</loc>
     <lastmod>2026-06-04</lastmod>
@@ -10,7 +10,7 @@
     <priority>1.00</priority>
   </url>
   
-  <!-- Page 2: Blog Listing -->
+  
   <url>
     <loc>https://directlychat.com/blog/</loc>
     <lastmod>2026-06-04</lastmod>
@@ -18,7 +18,7 @@
     <priority>0.80</priority>
   </url>
   
-  <!-- Page 3: How to Send WhatsApp Without Saving Number -->
+  
   <url>
     <loc>https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number</loc>
     <lastmod>2026-06-04</lastmod>
@@ -26,7 +26,7 @@
     <priority>0.70</priority>
   </url>
   
-  <!-- Page 4: NEW - WhatsApp Business vs Regular WhatsApp -->
+  
   <url>
     <loc>https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better</loc>
     <lastmod>2026-06-04</lastmod>
