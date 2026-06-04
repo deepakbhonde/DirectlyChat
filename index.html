@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#25D366">
+<meta name="theme-color" content="#f5f7fb">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -34,7 +34,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- External CSS & JS -->
 <style>
 :root {
   --green: #25D366;
@@ -175,11 +174,12 @@ body::before {
 .card-title {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--green-dark);
 }
 
 .input-group {
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- HOME PAGE -->
     <div class="page active" id="page-home">
       <div class="card">
-        <div class="card-title"><span>📱</span> <h2>Send WhatsApp Message Without Saving Phone Number </h2></div>
+        <div class="card-title"><span>📱</span> Send WhatsApp Message</div>
         <div class="input-group">
           <div class="country-select-wrap">
             <select id="countryCode">
@@ -795,7 +795,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div style="background:#ffffff; border:1px solid #dbe3ec; border-radius:14px; padding:18px;">
           <!-- visible H1 (above description) -->
           <h1 style="color:var(--green-dark); font-family:Sora,sans-serif; margin-bottom:10px; font-size:1.3rem;">
-            Send WhatsApp Messages Without Saving Number
+            Send WhatsApp Messages Without Saving Numbers
           </h1>
           <p style="color:#64748b; line-height:1.7; font-size:14px; text-align:justify;">
             DirectlyChat makes it easy to start a WhatsApp conversation without saving a phone number in your contacts.
