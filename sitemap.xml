@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- 
+    ============================================
+    PAGE 1: HOME (Main Tool)
+    ============================================
+  -->
   <url>
     <loc>https://directlychat.com/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
+  
+  <!-- 
+    ============================================
+    PAGE 2: BLOG LISTING
+    ============================================
+  -->
+  <url>
+    <loc>https://directlychat.com/blog/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- 
+    ============================================
+    PAGE 3: SINGLE BLOG POST
+    ============================================
+  -->
+  <url>
+    <loc>https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  
 </urlset>
