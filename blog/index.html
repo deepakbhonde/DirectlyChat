@@ -19,7 +19,7 @@
 <meta name="twitter:description" content="Your go-to resource for online tools and productivity improvement.">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- JSON-LD Schema -->
+<!-- JSON-LD Schema with both blog posts -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,6 +37,16 @@
       "headline": "How to Send WhatsApp Message Without Saving Phone Number",
       "url": "https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number",
       "description": "Learn 5 proven ways to send WhatsApp messages without saving contacts. Official click-to-chat links, voice assistant tricks, and DirectlyChat free website + Android app.",
+      "author": {
+        "@type": "Organization",
+        "name": "DirectlyChat"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "WhatsApp Business vs Regular WhatsApp – Which One Is Better?",
+      "url": "https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better",
+      "description": "Detailed comparison of WhatsApp Business and Regular WhatsApp. Features, pros, cons, and which one you should choose for personal or business use.",
       "author": {
         "@type": "Organization",
         "name": "DirectlyChat"
@@ -155,6 +165,11 @@
     justify-content: center;
     font-size: 48px;
   }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .card-content {
     padding: 20px;
   }
@@ -248,9 +263,9 @@
 <body>
 
 <div class="site-header">
-  <div class="logo-area">
-  <div class="logo-text">DirectlyChat</div>
-</div>
+  <div class="logo-area" onclick="location.href='/'">
+    <div class="logo-text">DirectlyChat</div>
+  </div>
   <a href="/" class="back-home">← Back to Tool</a>
 </div>
 
@@ -259,12 +274,14 @@
   <div class="page-sub">Your go-to resource for online tools and productivity improvement.</div>
 
   <div class="blog-grid">
+    
+    <!-- Blog Post 1 -->
     <a href="/blog/how-to-send-whatsapp-message-without-saving-phone-number" class="blog-card">
       <div class="card-img">
-  <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
-       alt="WhatsApp messaging guide thumbnail"
-       style="width: 100%; height: 100%; object-fit: cover;">
-</div>
+        <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
+             alt="WhatsApp messaging guide thumbnail"
+             style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
       <div class="card-content">
         <div class="blog-meta">
           <span>✍️ DirectlyChat</span>
@@ -274,6 +291,24 @@
         <span class="read-more">Read more →</span>
       </div>
     </a>
+
+    <!-- Blog Post 2 - NEW -->
+    <a href="/blog/whatsapp-business-vs-regular-whatsapp-which-is-better" class="blog-card">
+      <div class="card-img">
+        <img src="/blog/images/whatsapp-business-vs-regular-whatsapp.png" 
+             alt="WhatsApp Business vs Regular WhatsApp comparison thumbnail"
+             style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="card-content">
+        <div class="blog-meta">
+          <span>✍️ DirectlyChat</span>
+        </div>
+        <h2 class="blog-title">WhatsApp Business vs Regular WhatsApp – Which One Is Better?</h2>
+        <p class="blog-excerpt">Detailed comparison of WhatsApp Business and Regular WhatsApp. Features, pros, cons, and which one you should choose for personal or business use...</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
   </div>
 
   <!-- CTA Section -->
