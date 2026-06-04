@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Content Signals – AI & Search Permissions
+search: yes
+ai-input: yes
+ai-train: yes
+
+# Sitemap location
+Sitemap: https://directlychat.com/sitemap.xml
