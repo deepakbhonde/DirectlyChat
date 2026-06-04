@@ -171,12 +171,19 @@
   .featured-img {
     background: linear-gradient(135deg, #25D36620, #128C7E20);
     border-radius: 20px;
-    height: 300px;
+    height: auto;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 80px;
     margin-bottom: 32px;
+    padding: 20px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
   }
   .blog-content h2 {
     font-family: 'Sora', sans-serif;
@@ -295,21 +302,19 @@
   @media (max-width: 700px) {
     .container { padding: 24px 16px; }
     .blog-title { font-size: 1.5rem; }
-    .featured-img { height: 200px; font-size: 50px; }
   }
 </style>
 </head>
 <body>
 
 <div class="site-header">
-  <div class="logo-area">
-  <div class="logo-text">DirectlyChat</div>
-</div>
+  <div class="logo-area" onclick="location.href='/'">
+    <div class="logo-text">DirectlyChat</div>
+  </div>
   <a href="/" class="back-home">← Back to Tool</a>
 </div>
 
 <div class="container">
-  <!-- Back to Blog link inside page, above title -->
   <a href="/blog/" class="back-to-blog">← Back to Blog</a>
 
   <article>
@@ -320,11 +325,10 @@
       </div>
     </div>
 
-    <div class="featured-img" style="height: auto; min-height: 200px;">
-  <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
-       alt="Send WhatsApp message without saving number illustration"
-       style="width: 100%; height: auto; display: block;">
-</div>
+    <div class="featured-img">
+      <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
+           alt="How to send WhatsApp message without saving phone number illustration">
+    </div>
 
     <div class="blog-content">
       <p>We've all been there — you need to send a quick WhatsApp message to a delivery person, a customer, a cab driver, or a one-time work contact. But saving their number forever in your phone book? That's unnecessary clutter.</p>
@@ -437,7 +441,6 @@
       <h2>Ready to Try It?</h2>
       <p>All these methods are free and work across devices. Whether you prefer WhatsApp's official click-to-chat links, voice commands, or DirectlyChat, you'll never have to save a temporary number again.</p>
       
-      <!-- CTA Section -->
       <div class="cta-section">
         <p>🚀 Start using DirectlyChat today:</p>
         <div class="cta-buttons">
