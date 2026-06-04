@@ -403,3 +403,29 @@ body, .shell, .content-area, #page-home, .page, .page.active {
 .card, .seo-description-box {
   overflow: visible !important;
 }
+
+/* Main Footer */
+.main-footer {
+  text-align: center;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+.main-footer a {
+  color: var(--muted);
+  text-decoration: none;
+  margin: 0 6px;
+}
+.main-footer a:hover {
+  color: var(--green-dark);
+}
+.footer-sep {
+  color: var(--border);
+  margin: 0 4px;
+}
+.main-footer span:last-child {
+  margin-left: 6px;
+}
