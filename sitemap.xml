@@ -8,10 +8,6 @@
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Logo</image:title>
-    </image:image>
   </url>
   
   <!-- Blog Listing Page -->
@@ -20,12 +16,40 @@
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Blog</image:title>
-    </image:image>
   </url>
-  
+
+  <!-- ========================================== -->
+  <!-- UTILITY PAGES (above blogs)                -->
+  <!-- ========================================== -->
+
+  <!-- Corrections Page -->
+  <url>
+    <loc>https://directlychat.com/corrections</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- Authors Listing Page -->
+  <url>
+    <loc>https://directlychat.com/authors/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Individual Author Page -->
+  <url>
+    <loc>https://directlychat.com/authors/directlychat</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- ========================================== -->
+  <!-- BLOG POSTS (1, 2, 3, 4 in sequence)       -->
+  <!-- ========================================== -->
+
   <!-- Blog Post 1: How to Send WhatsApp Message Without Saving Number -->
   <url>
     <loc>https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number</loc>
@@ -36,12 +60,8 @@
       <image:loc>https://directlychat.com/blog/images/send-whatsapp-message-without-save-number.png</image:loc>
       <image:title>How to send WhatsApp message without saving phone number</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Logo</image:title>
-    </image:image>
   </url>
-  
+
   <!-- Blog Post 2: WhatsApp Business vs Regular WhatsApp -->
   <url>
     <loc>https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better</loc>
@@ -51,10 +71,6 @@
     <image:image>
       <image:loc>https://directlychat.com/blog/images/whatsapp-business-vs-regular-whatsapp.png</image:loc>
       <image:title>WhatsApp Business vs Regular WhatsApp comparison</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Logo</image:title>
     </image:image>
   </url>
 
@@ -68,42 +84,18 @@
       <image:loc>https://directlychat.com/blog/images/whatsapp-privacy-guide-2026.png</image:loc>
       <image:title>WhatsApp privacy guide 2026 illustration</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Logo</image:title>
-    </image:image>
   </url>
 
-  <!-- Authors Listing Page -->
+  <!-- Blog Post 4: WhatsApp Group Chats New Features 2026 -->
   <url>
-    <loc>https://directlychat.com/authors/</loc>
+    <loc>https://directlychat.com/blog/whatsapp-group-chats-new-features-2026-member-tags-text-stickers</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.70</priority>
     <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Authors</image:title>
+      <image:loc>https://directlychat.com/blog/images/whatsapp-group-chats-2026.png</image:loc>
+      <image:title>WhatsApp group chats new 2026 features</image:title>
     </image:image>
-  </url>
-
-  <!-- Individual Author Page -->
-  <url>
-    <loc>https://directlychat.com/authors/directlychat</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-    <image:image>
-      <image:loc>https://directlychat.com/android-icon-512x512.png</image:loc>
-      <image:title>DirectlyChat Author</image:title>
-    </image:image>
-  </url>
-
-  <!-- Corrections Page -->
-  <url>
-    <loc>https://directlychat.com/corrections</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
   </url>
 
 </urlset>
