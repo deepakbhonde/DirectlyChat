@@ -17,6 +17,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
 <meta name="theme-color" content="#25D366">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,8 +39,8 @@
   }
 }
 </script>
+
 <style>
-  /* ✅ ALL YOUR EXISTING CSS STYLES GO HERE – PASTE THE FULL STYLE SECTION FROM YOUR CURRENT FILE */
   :root {
     --green: #25D366;
     --green-dark: #128C7E;
@@ -85,7 +86,11 @@
     transition: all 0.2s;
   }
   .back-home:hover { border-color: var(--green-dark); color: var(--green-dark); }
-  .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
   .back-to-blog {
     display: inline-block;
     margin-bottom: 20px;
@@ -103,9 +108,11 @@
     margin-bottom: 8px;
   }
   .page-sub { color: var(--muted); font-size: 1rem; }
+
+  /* Categories grid: 2 columns on desktop, 1 on mobile */
   .category-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-bottom: 40px;
   }
@@ -175,12 +182,11 @@
   }
   .footer a { color: var(--muted); text-decoration: none; margin: 0 6px; }
   .footer a:hover { color: var(--green-dark); }
-  .coming-soon {
-    background: var(--surface2);
-    border-radius: 16px;
-    padding: 40px 20px;
-    text-align: center;
-    color: var(--muted);
+
+  /* Mobile: 1 column */
+  @media (max-width: 700px) {
+    .container { padding: 24px 16px; }
+    .category-list { grid-template-columns: 1fr; gap: 16px; }
   }
 </style>
 </head>
@@ -199,7 +205,6 @@
   </div>
 
   <div class="category-list">
-    <!-- ✅ Updated link: using /categories/ (working) -->
     <a href="https://directlychat.com/blog/categories/whatsapp" class="category-item">
       <div class="category-thumb">💬</div>
       <div class="category-info">
@@ -228,7 +233,6 @@
         <div class="category-count">Coming soon</div>
       </div>
     </a>
-    <!-- ✅ Updated Business category: count removed -->
     <a href="https://directlychat.com/blog/categories/business" class="category-item">
       <div class="category-thumb">🏢</div>
       <div class="category-info">
@@ -253,7 +257,6 @@
     </div>
   </div>
 
-  <!-- Breadcrumb: Home › Blog › Categories -->
   <div class="breadcrumb-bottom">
     <a href="https://directlychat.com/">Home</a>
     <span class="breadcrumb-separator">›</span>
