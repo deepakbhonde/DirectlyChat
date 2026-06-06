@@ -39,7 +39,7 @@
 }
 </script>
 <style>
-  /* same CSS as before – keep existing styles */
+  /* ✅ ALL YOUR EXISTING CSS STYLES GO HERE – PASTE THE FULL STYLE SECTION FROM YOUR CURRENT FILE */
   :root {
     --green: #25D366;
     --green-dark: #128C7E;
@@ -72,12 +72,7 @@
     gap: 12px;
   }
   .logo-area { display: flex; align-items: center; gap: 10px; cursor: pointer; }
-  .logo-text {
-    font-family: 'Sora', sans-serif;
-    font-weight: 800;
-    font-size: 1.15rem;
-    color: var(--green-dark);
-  }
+  .logo-text { font-family: 'Sora', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--green-dark); }
   .back-home {
     background: var(--surface2);
     border: 1px solid var(--border);
@@ -180,6 +175,13 @@
   }
   .footer a { color: var(--muted); text-decoration: none; margin: 0 6px; }
   .footer a:hover { color: var(--green-dark); }
+  .coming-soon {
+    background: var(--surface2);
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--muted);
+  }
 </style>
 </head>
 <body>
@@ -197,42 +199,44 @@
   </div>
 
   <div class="category-list">
-    <a href="https://directlychat.com/blog/category/whatsapp" class="category-item">
+    <!-- ✅ Updated link: using /categories/ (working) -->
+    <a href="https://directlychat.com/blog/categories/whatsapp" class="category-item">
       <div class="category-thumb">💬</div>
       <div class="category-info">
         <div class="category-name">WhatsApp</div>
         <div class="category-count">4 articles</div>
       </div>
     </a>
-    <a href="https://directlychat.com/blog/category/android" class="category-item">
+    <a href="https://directlychat.com/blog/categories/android" class="category-item">
       <div class="category-thumb">📱</div>
       <div class="category-info">
         <div class="category-name">Android</div>
         <div class="category-count">Coming soon</div>
       </div>
     </a>
-    <a href="https://directlychat.com/blog/category/software" class="category-item">
+    <a href="https://directlychat.com/blog/categories/software" class="category-item">
       <div class="category-thumb">💻</div>
       <div class="category-info">
         <div class="category-name">Software</div>
         <div class="category-count">Coming soon</div>
       </div>
     </a>
-    <a href="https://directlychat.com/blog/category/ios" class="category-item">
+    <a href="https://directlychat.com/blog/categories/ios" class="category-item">
       <div class="category-thumb">🍎</div>
       <div class="category-info">
         <div class="category-name">iOS</div>
         <div class="category-count">Coming soon</div>
       </div>
     </a>
-    <a href="https://directlychat.com/blog/category/business" class="category-item">
+    <!-- ✅ Updated Business category: count removed -->
+    <a href="https://directlychat.com/blog/categories/business" class="category-item">
       <div class="category-thumb">🏢</div>
       <div class="category-info">
         <div class="category-name">Business</div>
-        <div class="category-count">1 article</div>
+        <div class="category-count">Coming soon</div>
       </div>
     </a>
-    <a href="https://directlychat.com/blog/category/job" class="category-item">
+    <a href="https://directlychat.com/blog/categories/job" class="category-item">
       <div class="category-thumb">💼</div>
       <div class="category-info">
         <div class="category-name">Job</div>
@@ -268,4 +272,4 @@
 </div>
 <script>console.log('DirectlyChat - Categories');</script>
 </body>
-        </html>
+</html>
