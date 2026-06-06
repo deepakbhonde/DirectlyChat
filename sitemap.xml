@@ -33,5 +33,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-  
+
+   <url>
+    <loc>https://directlychat.com/blog/whatsapp-privacy-guide-2026-strict-settings-chat-lock</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>     
+
 </urlset>
