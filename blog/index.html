@@ -6,51 +6,91 @@
 <title>Blog - DirectlyChat</title>
 <meta name="description" content="Your go-to resource for online tools and productivity improvement.">
 <link rel="canonical" href="https://directlychat.com/blog/">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<meta name="theme-color" content="#25D366">
+
+<!-- Google Discover & SEO Meta Tags -->
+<meta name="robots" content="max-image-preview:large, index, follow">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+
 <meta property="og:title" content="Blog - DirectlyChat">
 <meta property="og:description" content="Your go-to resource for online tools and productivity improvement.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://directlychat.com/blog/">
 <meta property="og:image" content="https://directlychat.com/android-icon-512x512.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Blog - DirectlyChat">
 <meta name="twitter:description" content="Your go-to resource for online tools and productivity improvement.">
+<meta name="twitter:image" content="https://directlychat.com/android-icon-512x512.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<meta name="theme-color" content="#25D366">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- JSON-LD Schema with both blog posts -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Blog - DirectlyChat",
-  "description": "Your go-to resource for online tools and productivity improvement.",
-  "url": "https://directlychat.com/blog/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "DirectlyChat"
-  },
-  "blogPost": [
+  "@graph": [
     {
-      "@type": "BlogPosting",
-      "headline": "How to Send WhatsApp Message Without Saving Phone Number",
-      "url": "https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number",
-      "description": "Learn 5 proven ways to send WhatsApp messages without saving contacts. Official click-to-chat links, voice assistant tricks, and DirectlyChat free website + Android app.",
-      "author": {
+      "@type": "Blog",
+      "name": "Blog - DirectlyChat",
+      "description": "Your go-to resource for online tools and productivity improvement.",
+      "url": "https://directlychat.com/blog/",
+      "publisher": {
         "@type": "Organization",
-        "name": "DirectlyChat"
-      }
+        "name": "DirectlyChat",
+        "url": "https://directlychat.com/authors/directlychat"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "How to Send WhatsApp Message Without Saving Phone Number",
+          "url": "https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number",
+          "description": "Learn 5 proven ways to send WhatsApp messages without saving contacts.",
+          "author": {
+            "@type": "Organization",
+            "name": "DirectlyChat"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "WhatsApp Business vs Regular WhatsApp – Which One Is Better?",
+          "url": "https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better",
+          "description": "Detailed comparison of WhatsApp Business and Regular WhatsApp.",
+          "author": {
+            "@type": "Organization",
+            "name": "DirectlyChat"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "WhatsApp Privacy Guide 2026: 7 Settings You Must Change Right Now",
+          "url": "https://directlychat.com/blog/whatsapp-privacy-guide-2026-strict-settings-chat-lock",
+          "description": "Complete guide to WhatsApp privacy settings in 2026.",
+          "author": {
+            "@type": "Organization",
+            "name": "DirectlyChat"
+          }
+        }
+      ]
     },
     {
-      "@type": "BlogPosting",
-      "headline": "WhatsApp Business vs Regular WhatsApp – Which One Is Better?",
-      "url": "https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better",
-      "description": "Detailed comparison of WhatsApp Business and Regular WhatsApp. Features, pros, cons, and which one you should choose for personal or business use.",
-      "author": {
-        "@type": "Organization",
-        "name": "DirectlyChat"
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://directlychat.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://directlychat.com/blog/"
+        }
+      ]
     }
   ]
 }
@@ -156,7 +196,6 @@
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
   }
-  /* FIXED: Images will NOT crop, full image visible */
   .card-img {
     width: 100%;
     height: 180px;
@@ -203,6 +242,29 @@
     font-weight: 600;
     font-size: 0.85rem;
   }
+  .breadcrumb-bottom {
+    margin: 40px 0 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+  .breadcrumb-bottom a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .breadcrumb-bottom a:hover {
+    color: var(--green-dark);
+    text-decoration: underline;
+  }
+  .breadcrumb-separator {
+    margin: 0 8px;
+    color: var(--border);
+    font-weight: 300;
+  }
+  .current-page-bottom {
+    color: var(--text);
+    font-weight: 500;
+  }
   .cta-section {
     background: var(--surface2);
     border-radius: 16px;
@@ -238,11 +300,6 @@
     text-decoration: none;
     font-weight: 600;
   }
-  .cta-note {
-    font-size: 0.75rem;
-    margin-top: 12px;
-    color: var(--muted);
-  }
   .footer {
     text-align: center;
     padding: 30px 20px;
@@ -267,10 +324,10 @@
 <body>
 
 <div class="site-header">
-  <div class="logo-area" onclick="location.href='/'">
+  <div class="logo-area" onclick="location.href='https://directlychat.com/'">
     <div class="logo-text">DirectlyChat</div>
   </div>
-  <a href="/" class="back-home">← Back to Tool</a>
+  <a href="https://directlychat.com/" class="back-home">← Back to Tool</a>
 </div>
 
 <div class="container">
@@ -279,8 +336,8 @@
 
   <div class="blog-grid">
     
-    <!-- Blog Post 1: How to Send WhatsApp Message Without Saving Number -->
-    <a href="/blog/how-to-send-whatsapp-message-without-saving-phone-number" class="blog-card">
+    <!-- Blog Post 1 -->
+    <a href="https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number" class="blog-card">
       <div class="card-img">
         <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
              alt="Send WhatsApp message without saving number guide thumbnail">
@@ -295,8 +352,8 @@
       </div>
     </a>
 
-    <!-- Blog Post 2: WhatsApp Business vs Regular WhatsApp -->
-    <a href="/blog/whatsapp-business-vs-regular-whatsapp-which-is-better" class="blog-card">
+    <!-- Blog Post 2 -->
+    <a href="https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better" class="blog-card">
       <div class="card-img">
         <img src="/blog/images/whatsapp-business-vs-regular-whatsapp.png" 
              alt="WhatsApp Business vs Regular WhatsApp comparison thumbnail">
@@ -311,24 +368,48 @@
       </div>
     </a>
 
+    <!-- Blog Post 3 -->
+    <a href="https://directlychat.com/blog/whatsapp-privacy-guide-2026-strict-settings-chat-lock" class="blog-card">
+      <div class="card-img">
+        <img src="/blog/images/whatsapp-privacy-guide-2026.webp" 
+             alt="WhatsApp privacy guide 2026 thumbnail">
+      </div>
+      <div class="card-content">
+        <div class="blog-meta">
+          <span>✍️ DirectlyChat</span>
+        </div>
+        <h2 class="blog-title">WhatsApp Privacy Guide 2026: 7 Settings You Must Change Right Now</h2>
+        <p class="blog-excerpt">Complete guide to WhatsApp privacy settings in 2026 including Strict Account Settings, Chat Lock, hiding last seen, and more. Protect your WhatsApp account today...</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
   </div>
 
   <!-- CTA Section -->
   <div class="cta-section">
     <p>🚀 Start using DirectlyChat today:</p>
     <div class="cta-buttons">
-      <a href="/" class="btn-website">🌐 Open Website</a>
+      <a href="https://directlychat.com/" class="btn-website">🌐 Open Website</a>
       <a href="#" class="btn-app">📱 Download Android App</a>
     </div>
-    <div class="cta-note">No registration • No contact saving • 195+ countries supported</div>
+  </div>
+
+  <!-- Breadcrumb at bottom -->
+  <div class="breadcrumb-bottom">
+    <a href="https://directlychat.com/">Home</a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="current-page-bottom">Blog</span>
   </div>
 </div>
 
 <div class="footer">
   © DirectlyChat – Your go-to resource for online tools and productivity improvement | 
-  <a href="/">Website</a> | 
+  <a href="https://directlychat.com/">Website</a> | 
   <a href="#">Android App</a> |
-  <a href="/blog/">Blog</a>
+  <a href="https://directlychat.com/blog/">Blog</a> |
+  <a href="https://directlychat.com/authors/directlychat">Author</a> |
+  <a href="https://directlychat.com/corrections">Corrections</a>
 </div>
 
 <script>
