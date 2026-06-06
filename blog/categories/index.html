@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>Blog Categories - DirectlyChat</title>
+<meta name="description" content="Browse WhatsApp, Android, Software, iOS, Business, and Job related articles.">
+<link rel="canonical" href="https://directlychat.com/blog/categories/">
+<meta name="robots" content="max-image-preview:large, index, follow">
+<meta property="og:title" content="Blog Categories - DirectlyChat">
+<meta property="og:description" content="Browse all blog categories at DirectlyChat.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://directlychat.com/blog/categories/">
+<meta property="og:image" content="https://directlychat.com/android-icon-512x512.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<meta name="theme-color" content="#25D366">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog Categories - DirectlyChat",
+  "description": "Browse WhatsApp, Android, Software, iOS, Business, and Job related articles.",
+  "url": "https://directlychat.com/blog/categories/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DirectlyChat"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://directlychat.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://directlychat.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Categories", "item": "https://directlychat.com/blog/categories/" }
+    ]
+  }
+}
+</script>
+<style>
+  /* same CSS as before – keep existing styles */
+  :root {
+    --green: #25D366;
+    --green-dark: #128C7E;
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --surface2: #f1f5f9;
+    --border: #dbe3ec;
+    --text: #1f2937;
+    --muted: #64748b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .site-header {
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logo-area { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+  .logo-text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--green-dark);
+  }
+  .back-home {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .back-home:hover { border-color: var(--green-dark); color: var(--green-dark); }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+  .back-to-blog {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  .back-to-blog:hover { color: var(--green-dark); }
+  .page-header { margin-bottom: 32px; }
+  .page-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+  }
+  .page-sub { color: var(--muted); font-size: 1rem; }
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .category-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .category-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+  .category-thumb {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+  .category-info { flex: 1; }
+  .category-name {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .category-count { font-size: 0.75rem; color: var(--muted); }
+  .cta-section {
+    background: var(--surface2);
+    border-radius: 16px;
+    padding: 30px 20px;
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+  .cta-section p { margin-bottom: 16px; font-weight: 600; font-size: 1rem; }
+  .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn-website { background: var(--green-dark); color: white; padding: 10px 24px; border-radius: 30px; text-decoration: none; font-weight: 600; }
+  .btn-app { background: white; border: 2px solid var(--green-dark); color: var(--green-dark); padding: 10px 24px; border-radius: 30px; text-decoration: none; font-weight: 600; }
+  .breadcrumb-bottom {
+    margin: 40px 0 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+  .breadcrumb-bottom a { color: var(--muted); text-decoration: none; }
+  .breadcrumb-bottom a:hover { color: var(--green-dark); text-decoration: underline; }
+  .breadcrumb-separator { margin: 0 8px; color: var(--border); font-weight: 300; }
+  .current-page-bottom { color: var(--text); font-weight: 500; }
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .footer a { color: var(--muted); text-decoration: none; margin: 0 6px; }
+  .footer a:hover { color: var(--green-dark); }
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="logo-area" onclick="location.href='https://directlychat.com/'"><div class="logo-text">DirectlyChat</div></div>
+  <a href="https://directlychat.com/" class="back-home">← Back to Tool</a>
+</div>
+
+<div class="container">
+  <a href="https://directlychat.com/blog/" class="back-to-blog">← Back to Blog</a>
+  <div class="page-header">
+    <h1 class="page-title">Blog Categories</h1>
+    <p class="page-sub">Browse articles by topic</p>
+  </div>
+
+  <div class="category-list">
+    <a href="https://directlychat.com/blog/category/whatsapp" class="category-item">
+      <div class="category-thumb">💬</div>
+      <div class="category-info">
+        <div class="category-name">WhatsApp</div>
+        <div class="category-count">4 articles</div>
+      </div>
+    </a>
+    <a href="https://directlychat.com/blog/category/android" class="category-item">
+      <div class="category-thumb">📱</div>
+      <div class="category-info">
+        <div class="category-name">Android</div>
+        <div class="category-count">Coming soon</div>
+      </div>
+    </a>
+    <a href="https://directlychat.com/blog/category/software" class="category-item">
+      <div class="category-thumb">💻</div>
+      <div class="category-info">
+        <div class="category-name">Software</div>
+        <div class="category-count">Coming soon</div>
+      </div>
+    </a>
+    <a href="https://directlychat.com/blog/category/ios" class="category-item">
+      <div class="category-thumb">🍎</div>
+      <div class="category-info">
+        <div class="category-name">iOS</div>
+        <div class="category-count">Coming soon</div>
+      </div>
+    </a>
+    <a href="https://directlychat.com/blog/category/business" class="category-item">
+      <div class="category-thumb">🏢</div>
+      <div class="category-info">
+        <div class="category-name">Business</div>
+        <div class="category-count">1 article</div>
+      </div>
+    </a>
+    <a href="https://directlychat.com/blog/category/job" class="category-item">
+      <div class="category-thumb">💼</div>
+      <div class="category-info">
+        <div class="category-name">Job</div>
+        <div class="category-count">Coming soon</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="cta-section">
+    <p>🚀 Start using DirectlyChat today:</p>
+    <div class="cta-buttons">
+      <a href="https://directlychat.com/" class="btn-website">🌐 Open Website</a>
+      <a href="#" class="btn-app">📱 Download Android App</a>
+    </div>
+  </div>
+
+  <!-- Breadcrumb: Home › Blog › Categories -->
+  <div class="breadcrumb-bottom">
+    <a href="https://directlychat.com/">Home</a>
+    <span class="breadcrumb-separator">›</span>
+    <a href="https://directlychat.com/blog/">Blog</a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="current-page-bottom">Categories</span>
+  </div>
+</div>
+
+<div class="footer">
+  © DirectlyChat – Your go-to resource for online tools and productivity improvement | 
+  <a href="https://directlychat.com/">Website</a> | 
+  <a href="#">Android App</a> |
+  <a href="https://directlychat.com/blog/">Blog</a> |
+  <a href="https://directlychat.com/corrections">Corrections</a>
+</div>
+<script>console.log('DirectlyChat - Categories');</script>
+</body>
+        </html>
