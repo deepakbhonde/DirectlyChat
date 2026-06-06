@@ -52,58 +52,36 @@
           "headline": "WhatsApp Group Chats: 3 New Features You Must Try in 2026",
           "url": "https://directlychat.com/blog/whatsapp-group-chats-new-features-2026-member-tags-text-stickers",
           "description": "Complete guide to WhatsApp group chats new 2026 features: Member Tags, Text Stickers, and Early Event Reminders.",
-          "author": {
-            "@type": "Organization",
-            "name": "DirectlyChat"
-          }
+          "author": { "@type": "Organization", "name": "DirectlyChat" }
         },
         {
           "@type": "BlogPosting",
           "headline": "WhatsApp Privacy Guide 2026: 7 Settings You Must Change Right Now",
           "url": "https://directlychat.com/blog/whatsapp-privacy-guide-2026-strict-settings-chat-lock",
           "description": "Complete guide to WhatsApp privacy settings in 2026.",
-          "author": {
-            "@type": "Organization",
-            "name": "DirectlyChat"
-          }
+          "author": { "@type": "Organization", "name": "DirectlyChat" }
         },
         {
           "@type": "BlogPosting",
           "headline": "WhatsApp Business vs Regular WhatsApp – Which One Is Better?",
           "url": "https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better",
           "description": "Detailed comparison of WhatsApp Business and Regular WhatsApp.",
-          "author": {
-            "@type": "Organization",
-            "name": "DirectlyChat"
-          }
+          "author": { "@type": "Organization", "name": "DirectlyChat" }
         },
         {
           "@type": "BlogPosting",
           "headline": "How to Send WhatsApp Message Without Saving Phone Number",
           "url": "https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number",
           "description": "Learn 5 proven ways to send WhatsApp messages without saving contacts.",
-          "author": {
-            "@type": "Organization",
-            "name": "DirectlyChat"
-          }
+          "author": { "@type": "Organization", "name": "DirectlyChat" }
         }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://directlychat.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://directlychat.com/blog/"
-        }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://directlychat.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://directlychat.com/blog/" }
       ]
     }
   ]
@@ -142,17 +120,7 @@
     flex-wrap: wrap;
     gap: 12px;
   }
-  .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-  }
-  .logo-area img {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-  }
+  .logo-area { display: flex; align-items: center; gap: 10px; cursor: pointer; }
   .logo-text {
     font-family: 'Sora', sans-serif;
     font-weight: 800;
@@ -170,10 +138,7 @@
     text-decoration: none;
     transition: all 0.2s;
   }
-  .back-home:hover {
-    border-color: var(--green-dark);
-    color: var(--green-dark);
-  }
+  .back-home:hover { border-color: var(--green-dark); color: var(--green-dark); }
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -188,8 +153,75 @@
   }
   .page-sub {
     color: var(--muted);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 1rem;
+  }
+  .categories-heading {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 20px 0 12px;
+  }
+  /* Category Slider */
+  .categories-slider {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 10px;
+  }
+  .categories-slider::-webkit-scrollbar {
+    height: 4px;
+  }
+  .categories-slider::-webkit-scrollbar-track {
+    background: var(--border);
+    border-radius: 4px;
+  }
+  .categories-slider::-webkit-scrollbar-thumb {
+    background: var(--green-dark);
+    border-radius: 4px;
+  }
+  .slider-inner {
+    display: inline-flex;
+    gap: 16px;
+  }
+  .category-slide {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 90px;
+  }
+  .category-slide:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    border-color: var(--green-dark);
+  }
+  .slide-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .slide-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green-dark);
   }
   .blog-grid {
     display: grid;
@@ -262,23 +294,10 @@
     border-top: 1px solid var(--border);
     font-size: 0.8rem;
   }
-  .breadcrumb-bottom a {
-    color: var(--muted);
-    text-decoration: none;
-  }
-  .breadcrumb-bottom a:hover {
-    color: var(--green-dark);
-    text-decoration: underline;
-  }
-  .breadcrumb-separator {
-    margin: 0 8px;
-    color: var(--border);
-    font-weight: 300;
-  }
-  .current-page-bottom {
-    color: var(--text);
-    font-weight: 500;
-  }
+  .breadcrumb-bottom a { color: var(--muted); text-decoration: none; }
+  .breadcrumb-bottom a:hover { color: var(--green-dark); text-decoration: underline; }
+  .breadcrumb-separator { margin: 0 8px; color: var(--border); font-weight: 300; }
+  .current-page-bottom { color: var(--text); font-weight: 500; }
   .cta-section {
     background: var(--surface2);
     border-radius: 16px;
@@ -286,34 +305,10 @@
     margin: 40px 0 20px;
     text-align: center;
   }
-  .cta-section p {
-    margin-bottom: 16px;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  .cta-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-  }
-  .btn-website {
-    background: var(--green-dark);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .btn-app {
-    background: white;
-    border: 2px solid var(--green-dark);
-    color: var(--green-dark);
-    padding: 10px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-  }
+  .cta-section p { margin-bottom: 16px; font-weight: 600; font-size: 1rem; }
+  .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn-website { background: var(--green-dark); color: white; padding: 10px 24px; border-radius: 30px; text-decoration: none; font-weight: 600; }
+  .btn-app { background: white; border: 2px solid var(--green-dark); color: var(--green-dark); padding: 10px 24px; border-radius: 30px; text-decoration: none; font-weight: 600; }
   .footer {
     text-align: center;
     padding: 30px 20px;
@@ -321,17 +316,15 @@
     color: var(--muted);
     font-size: 0.8rem;
   }
-  .footer a {
-    color: var(--muted);
-    text-decoration: none;
-  }
-  .footer a:hover {
-    color: var(--green-dark);
-  }
+  .footer a { color: var(--muted); text-decoration: none; margin: 0 6px; }
+  .footer a:hover { color: var(--green-dark); }
   @media (max-width: 700px) {
     .container { padding: 24px 16px; }
     .blog-grid { gap: 20px; }
     .card-img { height: 150px; padding: 8px; }
+    .category-slide { padding: 8px 12px; min-width: 70px; }
+    .slide-icon { width: 36px; height: 36px; font-size: 18px; }
+    .slide-name { font-size: 0.7rem; }
   }
 </style>
 </head>
@@ -348,18 +341,46 @@
   <h1 class="page-title">Blog</h1>
   <div class="page-sub">Your go-to resource for online tools and productivity improvement.</div>
 
+  <!-- Categories heading and slider -->
+  <div class="categories-heading">Categories:</div>
+  <div class="categories-slider">
+    <div class="slider-inner">
+      <a href="https://directlychat.com/blog/categories/whatsapp" class="category-slide">
+        <div class="slide-icon">💬</div>
+        <div class="slide-name">WhatsApp</div>
+      </a>
+      <a href="https://directlychat.com/blog/categories/android" class="category-slide">
+        <div class="slide-icon">📱</div>
+        <div class="slide-name">Android</div>
+      </a>
+      <a href="https://directlychat.com/blog/categories/software" class="category-slide">
+        <div class="slide-icon">💻</div>
+        <div class="slide-name">Software</div>
+      </a>
+      <a href="https://directlychat.com/blog/categories/ios" class="category-slide">
+        <div class="slide-icon">🍎</div>
+        <div class="slide-name">iOS</div>
+      </a>
+      <a href="https://directlychat.com/blog/categories/business" class="category-slide">
+        <div class="slide-icon">🏢</div>
+        <div class="slide-name">Business</div>
+      </a>
+      <a href="https://directlychat.com/blog/categories/job" class="category-slide">
+        <div class="slide-icon">💼</div>
+        <div class="slide-name">Job</div>
+      </a>
+    </div>
+  </div>
+
   <div class="blog-grid">
     
-    <!-- Blog Post 4 (NEWEST - Top) -->
+    <!-- Blog Post 4 (newest) -->
     <a href="https://directlychat.com/blog/whatsapp-group-chats-new-features-2026-member-tags-text-stickers" class="blog-card">
       <div class="card-img">
-        <img src="/blog/images/whatsapp-group-chats-2026.png" 
-             alt="WhatsApp group chats new 2026 features thumbnail">
+        <img src="/blog/images/whatsapp-group-chats-2026.png" alt="WhatsApp group chats new 2026 features thumbnail">
       </div>
       <div class="card-content">
-        <div class="blog-meta">
-          <span>✍️ DirectlyChat</span>
-        </div>
+        <div class="blog-meta"><span>✍️ DirectlyChat</span></div>
         <h2 class="blog-title">WhatsApp Group Chats: 3 New Features You Must Try in 2026</h2>
         <p class="blog-excerpt">Complete guide to Member Tags, Text Stickers, and Early Event Reminders. Master WhatsApp groups with these powerful new tools...</p>
         <span class="read-more">Read more →</span>
@@ -369,15 +390,12 @@
     <!-- Blog Post 3 -->
     <a href="https://directlychat.com/blog/whatsapp-privacy-guide-2026-strict-settings-chat-lock" class="blog-card">
       <div class="card-img">
-        <img src="/blog/images/whatsapp-privacy-guide-2026.png" 
-             alt="WhatsApp privacy guide 2026 thumbnail">
+        <img src="/blog/images/whatsapp-privacy-guide-2026.png" alt="WhatsApp privacy guide 2026 thumbnail">
       </div>
       <div class="card-content">
-        <div class="blog-meta">
-          <span>✍️ DirectlyChat</span>
-        </div>
+        <div class="blog-meta"><span>✍️ DirectlyChat</span></div>
         <h2 class="blog-title">WhatsApp Privacy Guide 2026: 7 Settings You Must Change Right Now</h2>
-        <p class="blog-excerpt">Complete guide to WhatsApp privacy settings in 2026 including Strict Account Settings, Chat Lock, hiding last seen, and more. Protect your WhatsApp account today...</p>
+        <p class="blog-excerpt">Complete guide to Strict Account Settings, Chat Lock, hiding last seen, and more. Protect your WhatsApp account today...</p>
         <span class="read-more">Read more →</span>
       </div>
     </a>
@@ -385,31 +403,25 @@
     <!-- Blog Post 2 -->
     <a href="https://directlychat.com/blog/whatsapp-business-vs-regular-whatsapp-which-is-better" class="blog-card">
       <div class="card-img">
-        <img src="/blog/images/whatsapp-business-vs-regular-whatsapp.png" 
-             alt="WhatsApp Business vs Regular WhatsApp comparison thumbnail">
+        <img src="/blog/images/whatsapp-business-vs-regular-whatsapp.png" alt="WhatsApp Business vs Regular WhatsApp thumbnail">
       </div>
       <div class="card-content">
-        <div class="blog-meta">
-          <span>✍️ DirectlyChat</span>
-        </div>
+        <div class="blog-meta"><span>✍️ DirectlyChat</span></div>
         <h2 class="blog-title">WhatsApp Business vs Regular WhatsApp – Which One Is Better?</h2>
-        <p class="blog-excerpt">Detailed comparison of WhatsApp Business and Regular WhatsApp. Features, pros, cons, and which one you should choose for personal or business use...</p>
+        <p class="blog-excerpt">Detailed comparison of features, pros, cons, and which one you should choose for personal or business use...</p>
         <span class="read-more">Read more →</span>
       </div>
     </a>
 
-    <!-- Blog Post 1 (OLDEST - Bottom) -->
+    <!-- Blog Post 1 (oldest) -->
     <a href="https://directlychat.com/blog/how-to-send-whatsapp-message-without-saving-phone-number" class="blog-card">
       <div class="card-img">
-        <img src="/blog/images/send-whatsapp-message-without-save-number.png" 
-             alt="Send WhatsApp message without saving number guide thumbnail">
+        <img src="/blog/images/send-whatsapp-message-without-save-number.png" alt="Send WhatsApp message without saving number thumbnail">
       </div>
       <div class="card-content">
-        <div class="blog-meta">
-          <span>✍️ DirectlyChat</span>
-        </div>
+        <div class="blog-meta"><span>✍️ DirectlyChat</span></div>
         <h2 class="blog-title">How to Send WhatsApp Message Without Saving Phone Number</h2>
-        <p class="blog-excerpt">Discover 5 proven ways to message anyone on WhatsApp without cluttering your contact list. From official click-to-chat links to voice commands and DirectlyChat free website + Android app...</p>
+        <p class="blog-excerpt">Discover 5 proven ways to message anyone on WhatsApp without cluttering your contact list...</p>
         <span class="read-more">Read more →</span>
       </div>
     </a>
@@ -441,8 +453,6 @@
   <a href="https://directlychat.com/corrections">Corrections</a>
 </div>
 
-<script>
-  console.log('DirectlyChat Blog');
-</script>
+<script>console.log('DirectlyChat Blog');</script>
 </body>
 </html>
