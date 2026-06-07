@@ -35,8 +35,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4949921690978159"
-     crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4949921690978159" crossorigin="anonymous"></script>
 
 <style>
 :root {
@@ -90,7 +89,7 @@ body::before {
   flex-shrink: 0;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; cursor: pointer; }
 .brand-icon-img { width: 36px; height: 36px; object-fit: contain; }
 .brand-name {
   font-family: 'Sora', sans-serif;
@@ -447,7 +446,7 @@ body::before {
   -webkit-overflow-scrolling: touch !important;
 }
 
-/* Main Footer */
+/* Main Footer (not used in home page, kept for reference) */
 .main-footer {
   text-align: center;
   padding: 16px 20px;
@@ -531,12 +530,13 @@ function shareApp() {
 }
 function rateApp() { window.open('https://play.google.com/store', '_blank'); }
 
-// Detect if inside WebView (Android App)
-function isInApp() {
-  return navigator.userAgent.indexOf('wv') > -1;
+// Detect if running as installed app (standalone mode)
+function isRunningAsApp() {
+  if (window.matchMedia('(display-mode: standalone)').matches) return true;
+  const ua = navigator.userAgent.toLowerCase();
+  return ua.indexOf('wv') > -1 || ua.indexOf('webview') > -1;
 }
 
-// DOM-ready actions
 document.addEventListener('DOMContentLoaded', function() {
   const cs = document.getElementById('countryCode');
   cs.addEventListener('change', function() {
@@ -561,21 +561,14 @@ document.addEventListener('DOMContentLoaded', function() {
   setGreeting();
   setInterval(setGreeting, 60000);
 
-  // Hide non-essential cards when running inside a WebView (Android app)
-  if (isInApp()) {
-    const greetingCard = document.getElementById('greetingCard');
-    if (greetingCard) greetingCard.style.display = 'none';
-
-    // The description card is the third child of #page-home (index 2)
-    const descriptionDiv = document.querySelector('#page-home > div:nth-child(3)');
-    if (descriptionDiv && descriptionDiv.querySelector('h1')) {
-      descriptionDiv.style.display = 'none';
-    }
-
-    const inlineFooter = document.querySelector('#page-home > div:last-child');
-    if (inlineFooter && inlineFooter.style.borderTop && inlineFooter.textContent.includes('Blog')) {
-      inlineFooter.style.display = 'none';
-    }
+  // Hide extra cards when running as an installed app
+  if (isRunningAsApp()) {
+    const greetingDiv = document.getElementById('greetingCard');
+    if (greetingDiv) greetingDiv.style.display = 'none';
+    const descriptionDiv = document.getElementById('descriptionCard');
+    if (descriptionDiv) descriptionDiv.style.display = 'none';
+    const inlineFooterDiv = document.getElementById('inlineFooter');
+    if (inlineFooterDiv) inlineFooterDiv.style.display = 'none';
   }
 });
 </script>
@@ -635,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="shell">
   <div class="topbar">
-    <div class="brand">
+    <div class="brand" onclick="location.href='https://directlychat.com/'">
       <div class="brand-name">DirectlyChat</div>
     </div>
     <div class="topbar-actions">
@@ -717,7 +710,6 @@ document.addEventListener('DOMContentLoaded', function() {
               <option value="852">🇭🇰 Hong Kong +852</option>
               <option value="36">🇭🇺 Hungary +36</option>
               <option value="354">🇮🇸 Iceland +354</option>
-              <option value="" disabled selected>🌍 Select Country Code</option>
               <option value="91">🇮🇳 India +91</option>
               <option value="62">🇮🇩 Indonesia +62</option>
               <option value="353">🇮🇪 Ireland +353</option>
@@ -810,8 +802,8 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Greeting Card (hidden in app) -->
-      <div style="width:100%; max-width:420px; margin-top:8px;">
-        <div id="greetingCard" style="background:#ffffff; border:1px solid #dbe3ec; border-radius:14px; padding:18px;">
+      <div id="greetingCard" style="width:100%; max-width:420px; margin-top:8px;">
+        <div style="background:#ffffff; border:1px solid #dbe3ec; border-radius:14px; padding:18px;">
           <div style="height:260px; background:#f9fafb; display:flex; align-items:center; justify-content:center; border-radius:10px; font-size:1.5rem; font-weight:600; font-family:'Sora',sans-serif; color:#128C7E; text-align:center;">
             <span id="dynamicGreeting"></span>
           </div>
@@ -819,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Description Card (full original text, hidden in app) -->
-      <div style="width:100%; max-width:420px; margin-top:8px;">
+      <div id="descriptionCard" style="width:100%; max-width:420px; margin-top:8px;">
         <div style="background:#ffffff; border:1px solid #dbe3ec; border-radius:14px; padding:18px;">
           <h1 style="color:var(--green-dark); font-family:Sora,sans-serif; margin-bottom:10px; font-size:1.3rem;">Send WhatsApp Messages Without Saving Numbers</h1>
           <p style="color:#64748b; line-height:1.7; font-size:14px; text-align:justify;">
@@ -842,7 +834,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Inline Footer (hidden in app) -->
-      <div style="width:100%; max-width:420px; margin-top:16px; margin-bottom:16px; text-align:center; padding:14px 0; border-top:1px solid var(--border);">
+      <div id="inlineFooter" style="width:100%; max-width:420px; margin-top:16px; margin-bottom:16px; text-align:center; padding:14px 0; border-top:1px solid var(--border);">
         <div style="margin-bottom:8px;">
           <a href="/blog/" style="color:var(--muted); text-decoration:none; font-size:0.82rem; margin:0 6px;">📝 Blog</a>
           <span style="color:var(--border); margin:0 2px;">|</span>
@@ -856,7 +848,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- FAQ PAGE -->
+    <!-- FAQ PAGE (full original content) -->
     <div class="page" id="page-faq">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">FAQ's</div></div>
       <div class="page-body">
@@ -874,7 +866,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- HOW PAGE -->
+    <!-- HOW PAGE (full original content) -->
     <div class="page" id="page-how">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">How It Works</div></div>
       <div class="page-body">
@@ -888,7 +880,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- USAGE PAGE -->
+    <!-- USAGE PAGE (full original content) -->
     <div class="page" id="page-usage">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">Usecase of DirectlyChat</div></div>
       <div class="page-body">
@@ -904,7 +896,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- PRIVACY POLICY PAGE -->
+    <!-- PRIVACY POLICY PAGE (full original content) -->
     <div class="page" id="page-privacy">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">Privacy Policy</div></div>
       <div class="page-body">
@@ -924,7 +916,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- TERMS OF USE PAGE -->
+    <!-- TERMS OF USE PAGE (full original content) -->
     <div class="page" id="page-terms">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">Terms of Use</div></div>
       <div class="page-body">
@@ -943,7 +935,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <!-- ABOUT PAGE -->
+    <!-- ABOUT PAGE (full original content) -->
     <div class="page" id="page-about">
       <div class="page-header"><button class="back-btn" onclick="showPage('home')">←</button><div class="page-title">About</div></div>
       <div class="page-body">
