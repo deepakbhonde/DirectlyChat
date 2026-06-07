@@ -3,9 +3,10 @@
   "short_name": "DirectlyChat",
   "description": "Send WhatsApp messages without saving phone numbers.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f5f7fb",
-  "theme_color": "#f5f7fb",
+  "theme_color": "#25D366",
   "orientation": "portrait",
   "icons": [
     {
