@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.directlychat.twa",
+      "sha256_cert_fingerprints": [
+        "20:1F:2C:94:E8:DA:32:46:F3:5A:6A:A1:C3:52:AF:E4:E0:65:52:82:A0:99:AF:04:01:04:71:2A:12:CC:FE:96"
+      ]
+    }
+  }
+]
